@@ -1,0 +1,19 @@
+import 'package:ruas_lingkaran/ruas_lingkaran.dart' as ruas_lingkaran;
+
+double hitungPanjangRuasLingkaran(double jariJari, double sudutDalamDerajat) {
+  // Konversi sudut dari derajat ke radian
+  double sudutDalamRadian = sudutDalamDerajat * (3.14159265359 / 180.0);
+
+  // Menghitung panjang ruas lingkaran
+  double panjangRuas = 2 * 3.14159265359 * jariJari * (sudutDalamRadian / 360.0);
+
+  return panjangRuas;
+}
+
+void main() {
+  double jariJariLingkaran = 5.0; // Ganti dengan jari-jari lingkaran Anda
+  double sudutDerajat = 60.0;    // Ganti dengan sudut dalam derajat
+
+  double panjangRuas = hitungPanjangRuasLingkaran(jariJariLingkaran, sudutDerajat);
+  print("Panjang ruas lingkaran adalah: $panjangRuas");
+}
