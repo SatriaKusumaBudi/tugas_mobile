@@ -1,0 +1,11 @@
+import 'package:penggabungan/penggabungan.dart' as penggabungan;
+
+void main() {
+  String string1 = "Halo, ";
+  String string2 = "ini ";
+  String string3 = "contoh penggabungan string.";
+
+  String gabungString = string1 + string2 + string3;
+
+  print(gabungString);
+}
