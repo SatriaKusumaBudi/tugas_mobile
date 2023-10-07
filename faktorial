@@ -1,0 +1,19 @@
+import 'package:faktorial/faktorial.dart' as faktorial;
+
+int hitungFaktorial(int angka) {
+  if (angka == 0) {
+    return 1;
+  } else {
+    return angka * hitungFaktorial(angka - 1);
+  }
+}
+
+void main() {
+  int faktorial10 = hitungFaktorial(10);
+  int faktorial20 = hitungFaktorial(20);
+  int faktorial30 = hitungFaktorial(30);
+
+  print("Faktorial dari 10 adalah: $faktorial10");
+  print("Faktorial dari 20 adalah: $faktorial20");
+  print("Faktorial dari 30 adalah: $faktorial30");
+}
